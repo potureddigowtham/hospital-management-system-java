@@ -1,0 +1,85 @@
+create table patient
+(Pat_Name char(40), 
+Pat_ID char(40),
+Pat_Address char(60),
+Pat_Phone_Number int,
+Pat_Doctor_Incharge_ID char(40),
+Pat_Date_Admission date ,
+Pat_Date_Discharge date ,
+Pat_Amount int ,
+Pat_Disease char(40) ,
+Pat_Room_Number char(40));
+
+create table doctor 
+(
+Doc_Name char(40) ,
+
+Doc_ID int ,
+
+Doc_Address char(60) ,
+
+Doc_Phone_Number int ,
+
+Doc_Qualification char(40) ,
+
+Doc_Department char(40) ,
+
+Doc_Fee int ,
+
+Doc_Fee_Validity int,
+
+Doc_Join date ,
+
+Doc_Cabin_Number char(40));
+
+
+
+
+create table staff 
+(
+Staff_Name char(40) ,
+
+Staff_ID char(40) ,
+
+Staff_Address char(60) ,
+
+Staff_Phone_Number int ,
+
+Staff_Qualification char(40) ,
+
+Staff_Department char(40) ,
+
+Staff_Salary int ,
+
+Staff_Date_Join date); 
+
+
+
+insert into patient values("Raj", "101", "Delhi", 2605112, "Sanjeev", "2001-01-01", "2002-01-01", 15000, "TB", "1001") ;
+
+insert into patient values("Rohit", "102", "Haryana", 2605113, "Rupali", "2001-01-02", "2002-01-02", 12000, "Cancer", "1002");
+
+insert into patient values("Amba", "103", "Vadodara", 2605114, "Roopesh", "2001-01-03", "2002-02-01", 13000, "Pneumonia", "1003");
+
+insert into patient values("Ashish", "104", "Chennai", 2605115, "Santosh", "2001-01-04", "2002-03-01", 12000, "Osteoporosis", "1004");
+
+insert into patient values("Ashutosh", "105", "Kashmir", 2605116, "Pallavi", "2001-01-05", "2002-04-01", 15000, "Psoriosis", "1005");
+
+insert into patient values("Shankar", "106", "Ludhiana", 2605117, "Ridhima", "2001-01-06", "2002-05-01", 17000, "Anaemia", "1006");
+
+
+
+
+insert into doctor values("Sanjeev", 123, "Delhi", 2605112, "MD", "Surgery", 15000, 23, "2001-01-01", "1") ;   
+
+insert into doctor values("Rupali", 123, "Haryana", 2605113, "MBBS", "Surgery", 15000, 40, "2001-01-02", "2") ;
+insert into doctor values("Santosh", 123, "Vadodara", 2605114, "MD", "Dentistry", 16000, 47, "2001-01-03", "3") ;
+
+insert into doctor values("Pallavi", 123, "Kashmir", 2605115, "MBBS", "Surgery", 17000, 43, "2001-01-04", "4") ;
+
+insert into doctor values("Ridhima", 123, "Ludhiana", 2605116, "MD", "Peadetrician", 12000, 45, "2001-01-05", "5") ;
+
+insert into doctor values("Roopesh", 123, "Chennai", 2605117, "MBBS", "Surgery", 11000, 42, "2001-01-06", "6") ;
+
+
+
